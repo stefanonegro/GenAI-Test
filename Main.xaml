@@ -1,0 +1,211 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1884,1076" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C724F2CF7CA_v1_sub_chat_sub_completion_Create.Bundle;assembly=C724F2CF7CA_v1_sub_c.QoyMx1Lh3mN17YEZ5vn9oS2" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Platform</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>C724F2CF7CA_index_an.B6PnK4PSztO1P18DU2T87GH2</AssemblyReference>
+      <AssemblyReference>C724F2CF7CA_v1_sub_c.QoyMx1Lh3mN17YEZ5vn9oS2</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,1011.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ImageAnalysis" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\Users\stefa\Desktop\Checks" sap:VirtualizedContainerService.HintSize="450,923.3333333333334" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,630.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <isactr:ConnectorActivity Configuration="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" ConnectionId="306ace2b-6cde-4e1d-8796-00724f2cf7ca" DisplayName="Image Analysis" sap:VirtualizedContainerService.HintSize="354,428" sap2010:WorkflowViewState.IdRef="ConnectorActivity_2" UiPathActivityTypeId="267d190b-590f-304a-a865-e9d3722fa772">
+              <isactr:ConnectorActivity.FieldObjects>
+                <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">gpt-4o-2024-05-13</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">Extract name, date, amount and description from the Check. Also check if the signature correspond to the name</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="image_type" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">File</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="_file" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(CurrentFile.FullName)]</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="image_url" Type="FieldArgument" />
+                <isactr:FieldObject Name="topK" Type="FieldArgument" />
+                <isactr:FieldObject Name="topP" Type="FieldArgument" />
+                <isactr:FieldObject Name="top_p" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">Read my Image</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="temperature" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Double">0</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="n" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="_stop" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String">[ImageAnalysis]</OutArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="Jit_v1_sub_chat_sub_completion" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="uiascb:v1_sub_chat_sub_completion_Create" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+              </isactr:ConnectorActivity.FieldObjects>
+            </isactr:ConnectorActivity>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="354,114.66666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[ImageAnalysis]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+    </ui:ForEachFileX>
+  </Sequence>
+</Activity>
