@@ -90,6 +90,9 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>DataService.GenAI_Test</AssemblyReference>
+      <AssemblyReference>CA4B92DD593_generate.jH1s52JjvXP1SErS62jx2da4</AssemblyReference>
+      <AssemblyReference>C6F0D5AC66F_v2_sub_g.OwIQCqGEvH1T409J3Knd5X</AssemblyReference>
+      <AssemblyReference>C6F0D5AC66F_index_an.2HFq71l5TmA1ZlIdL331rmm2</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="API" sap:VirtualizedContainerService.HintSize="512,2122" sap2010:WorkflowViewState.IdRef="Sequence_1">

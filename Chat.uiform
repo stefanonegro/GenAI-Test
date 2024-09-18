@@ -1,0 +1,79 @@
+﻿{
+  "Metadata": {
+    "Id": "83f8d60c-f7ec-4f60-9b4a-35a8d335aac0",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Chat",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Question",
+        "tableView": true,
+        "key": "question",
+        "type": "textarea",
+        "input": true
+      },
+      {
+        "label": "Legislation",
+        "optionsLabelPosition": "right",
+        "inline": false,
+        "tableView": false,
+        "values": [
+          {
+            "label": "Italy",
+            "value": "italy",
+            "shortcut": ""
+          },
+          {
+            "label": "U.S.A.",
+            "value": "uSA",
+            "shortcut": ""
+          }
+        ],
+        "key": "legislation",
+        "type": "radio",
+        "input": true
+      },
+      {
+        "label": "Submit",
+        "action": "event",
+        "showValidations": false,
+        "theme": "info",
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "type": "button",
+        "input": true
+      },
+      {
+        "label": "Answer",
+        "tableView": true,
+        "key": "answer",
+        "type": "textarea",
+        "input": true
+      },
+      {
+        "label": "Quote",
+        "tableView": true,
+        "key": "quote",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Close",
+        "action": "event",
+        "showValidations": false,
+        "tableView": false,
+        "key": "close",
+        "type": "button",
+        "input": true
+      }
+    ]
+  }
+}

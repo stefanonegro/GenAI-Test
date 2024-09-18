@@ -1,0 +1,33 @@
+{
+  "DisplayName": "Customer Care Reviews",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "UiPathEventObjectId",
+      "DisplayName": "UiPathEventObjectId",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "argument1",
+      "DisplayName": "argument1",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

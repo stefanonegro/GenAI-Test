@@ -2,12 +2,16 @@
   "name": "GenAI Test",
   "projectId": "9afc6dd8-daf3-4b87-b3ad-09a81ae14eca",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "Main2 - Context Grounding.xaml",
   "dependencies": {
     "UiPath.DataService.Activities": "[24.7.1]",
     "UiPath.Excel.Activities": "[2.23.5]",
+    "UiPath.Form.Activities": "[24.10.2]",
+    "UiPath.FormActivityLibrary": "[2.0.7]",
+    "UiPath.GSuite.Activities": "[2.6.24]",
     "UiPath.IntegrationService.Activities": "1.7.0",
     "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.Persistence.Activities": "[1.5.9]",
     "UiPath.System.Activities": "[24.10.3]",
     "UiPath.Testing.Activities": "[24.10.1]",
     "UiPath.UIAutomation.Activities": "[24.10.3]"
@@ -23,7 +27,7 @@
   ],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.1.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.4",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -58,8 +62,20 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "8227cc4a-deef-4dd8-84e7-ea5b022765a4",
+      "filePath": "Customer Care Reviews.xaml",
+      "uniqueId": "19891e57-e5ea-466b-b1f8-559bf5ddf1fa",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Main2 - Context Grounding.xaml",
+      "uniqueId": "ba308a37-3ec6-445f-a962-763593d1bd55",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Main - Check Analysis.xaml",
+      "uniqueId": "c54a73dc-ec86-447c-b136-9c7a4c945fef",
       "input": [],
       "output": []
     }
