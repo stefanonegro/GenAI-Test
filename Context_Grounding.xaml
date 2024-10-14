@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Context_Grounding" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C6F0D5AC66F_index_and_ingest_Create.Bundle;assembly=C6F0D5AC66F_index_an.2HFq71l5TmA1ZlIdL331rmm2" xmlns:uiascb1="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C6F0D5AC66F_v2_sub_generateChatCompletion_Create.Bundle;assembly=C6F0D5AC66F_v2_sub_g.OwIQCqGEvH1T409J3Knd5X" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Context_Grounding" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CE825E7A69E_index_and_ingest_Create.Bundle;assembly=CE825E7A69E_index_an.UI2XI2RPlZQ16LsvH4o59Qv3" xmlns:uiascb1="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CE825E7A69E_v2_sub_generateChatCompletion_Create.Bundle;assembly=CE825E7A69E_v2_sub_g.WFELk3hb0nE1RrUTZ948ON" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="question" Type="InArgument(x:String)" />
     <x:Property Name="answer" Type="OutArgument(x:String)" />
@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1720,2158</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>782,1714</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Context_Grounding_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -47,6 +47,8 @@
       <x:String>UiPath.Persistence.Activities</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -98,33 +100,42 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>CE825E7A69E_v2_sub_g.WFELk3hb0nE1RrUTZ948ON</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Context_Grounding" sap:VirtualizedContainerService.HintSize="514.6666666666666,2093.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Context_Grounding" sap:VirtualizedContainerService.HintSize="941.9999999999999,1356" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Index and ingest files" sap:VirtualizedContainerService.HintSize="452.6666666666667,618.6666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Index and ingest files" sap:VirtualizedContainerService.HintSize="496.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,506.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,373.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <isactr:ConnectorActivity Configuration="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" ConnectionId="c81fe351-1cc7-4294-8a86-536f0d5ac66f" DisplayName="Index and Ingest (Public Preview)" sap:VirtualizedContainerService.HintSize="354,418.6666666666667" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="b92f5973-1c94-3b67-a0ec-410a189d897a">
+          <isactr:ConnectorActivity Configuration="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" ConnectionId="2e9bd330-9784-466f-a0a5-18e825e7a69e" DisplayName="Index and Ingest (Public Preview)" sap:VirtualizedContainerService.HintSize="382,313.3333333333333" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="b92f5973-1c94-3b67-a0ec-410a189d897a">
             <isactr:ConnectorActivity.FieldObjects>
               <isactr:FieldObject Name="storageBucket_sub_folderNameAndId" Type="FieldArgument">
                 <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">3233604-Shared</InArgument>
+                  <InArgument x:TypeArguments="x:String">1842681-Shared</InArgument>
                 </isactr:FieldObject.Value>
               </isactr:FieldObject>
-              <isactr:FieldObject Name="storageBucket_sub_name" Type="FieldArgument" />
+              <isactr:FieldObject Name="storageBucket_sub_name" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String">Employees</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
               <isactr:FieldObject Name="schema_sub_name" Type="FieldArgument">
                 <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">"Company Invoices"</InArgument>
+                  <InArgument x:TypeArguments="x:String">Employees</InArgument>
                 </isactr:FieldObject.Value>
               </isactr:FieldObject>
               <isactr:FieldObject Name="dataType" Type="FieldArgument">
@@ -163,230 +174,364 @@
       </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <If Condition="[legislation=&quot;italy&quot;]" sap:VirtualizedContainerService.HintSize="452.6666666666667,1386.6666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[legislation]" sap:VirtualizedContainerService.HintSize="496.6666666666667,932" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+      <Sequence x:Key="italy" sap:VirtualizedContainerService.HintSize="468,331.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <isactr:ConnectorActivity Configuration="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" ConnectionId="2e9bd330-9784-466f-a0a5-18e825e7a69e" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="434,501.3333333333333" sap2010:WorkflowViewState.IdRef="ConnectorActivity_4" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+          <isactr:ConnectorActivity.FieldObjects>
+            <isactr:FieldObject Name="modelName" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String">gpt-35-turbo-0125</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="prompt" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String">[question]</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+            <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+            <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+            <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+            <isactr:FieldObject Name="topK" Type="FieldArgument" />
+            <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String">Existing index</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="topP" Type="FieldArgument" />
+            <isactr:FieldObject Name="_file" Type="FieldArgument" />
+            <isactr:FieldObject Name="indexID" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String">HR</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="numberOfResults" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:Int64">3</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="top_p" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:Int64">1</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="instruction" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:Int64" />
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="temperature" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:Double">1</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:Int64">0</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:Int64">0</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="n" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:Int64">1</InArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="_stop" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <InArgument x:TypeArguments="x:String" />
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="out_text" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <OutArgument x:TypeArguments="x:String">[answer]</OutArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <OutArgument x:TypeArguments="x:String" />
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <OutArgument x:TypeArguments="uiascb1:v2_sub_generateChatCompletion_Create" />
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+            <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+              <isactr:FieldObject.Value>
+                <OutArgument x:TypeArguments="x:String">[quote]</OutArgument>
+              </isactr:FieldObject.Value>
+            </isactr:FieldObject>
+          </isactr:ConnectorActivity.FieldObjects>
+        </isactr:ConnectorActivity>
+        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[answer]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[answer.Replace("PwC", "the Company")]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </Sequence>
+      <isactr:ConnectorActivity x:Key="uSA" Configuration="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" ConnectionId="2e9bd330-9784-466f-a0a5-18e825e7a69e" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="334,469.3333333333333" sap2010:WorkflowViewState.IdRef="ConnectorActivity_6" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+        <isactr:ConnectorActivity.FieldObjects>
+          <isactr:FieldObject Name="modelName" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">gpt-35-turbo-0125</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="prompt" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">[question]</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+          <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+          <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+          <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+          <isactr:FieldObject Name="topK" Type="FieldArgument" />
+          <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">Existing index</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="topP" Type="FieldArgument" />
+          <isactr:FieldObject Name="_file" Type="FieldArgument" />
+          <isactr:FieldObject Name="indexID" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">Laws</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="numberOfResults" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">3</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="top_p" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">1</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="instruction" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="temperature" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Double">1</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">0</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">0</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="n" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">1</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="_stop" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="out_text" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="x:String">[answer]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="x:String" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="uiascb1:v2_sub_generateChatCompletion_Create" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="x:String">[quote]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+        </isactr:ConnectorActivity.FieldObjects>
+      </isactr:ConnectorActivity>
+      <isactr:ConnectorActivity x:Key="employees" Configuration="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" ConnectionId="2e9bd330-9784-466f-a0a5-18e825e7a69e" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="334,660.6666666666666" sap2010:WorkflowViewState.IdRef="ConnectorActivity_7" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+        <isactr:ConnectorActivity.FieldObjects>
+          <isactr:FieldObject Name="modelName" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">gpt-35-turbo-0125</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="prompt" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">[question]</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="languageCode" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">en</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="s:String[]">[New String(){"PersonType"}]</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Double">0.75</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="topK" Type="FieldArgument" />
+          <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">Existing index</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="topP" Type="FieldArgument" />
+          <isactr:FieldObject Name="_file" Type="FieldArgument" />
+          <isactr:FieldObject Name="indexID" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">Employees</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="numberOfResults" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">3</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="top_p" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">1</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="instruction" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="temperature" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Double">1</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">0</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">0</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="n" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int64">1</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="_stop" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="out_text" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="x:String">[answer]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="x:String" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="uiascb1:v2_sub_generateChatCompletion_Create" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="x:String">[quote]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+        </isactr:ConnectorActivity.FieldObjects>
+      </isactr:ConnectorActivity>
+    </Switch>
+    <If Condition="[legislation=&quot;italy&quot;]" sap:VirtualizedContainerService.HintSize="496.6666666666667,344" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,612" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <isactr:ConnectorActivity Configuration="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" ConnectionId="c81fe351-1cc7-4294-8a86-536f0d5ac66f" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="354,524" sap2010:WorkflowViewState.IdRef="ConnectorActivity_4" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
-            <isactr:ConnectorActivity.FieldObjects>
-              <isactr:FieldObject Name="modelName" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">gpt-35-turbo-0125</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="prompt" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">[question]</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
-              <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
-              <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
-              <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
-              <isactr:FieldObject Name="topK" Type="FieldArgument" />
-              <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">Existing index</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="topP" Type="FieldArgument" />
-              <isactr:FieldObject Name="_file" Type="FieldArgument" />
-              <isactr:FieldObject Name="indexID" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">Italian Laws</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="numberOfResults" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">3</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="top_p" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">1</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="instruction" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64" />
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="temperature" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Double">1</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">0</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">0</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="n" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">1</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="_stop" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String" />
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="out_text" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="x:String">[answer]</OutArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="x:String" />
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="uiascb1:v2_sub_generateChatCompletion_Create" />
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="x:String">[quote]</OutArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-            </isactr:ConnectorActivity.FieldObjects>
-          </isactr:ConnectorActivity>
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,612" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <isactr:ConnectorActivity Configuration="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" ConnectionId="c81fe351-1cc7-4294-8a86-536f0d5ac66f" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="354,524" sap2010:WorkflowViewState.IdRef="ConnectorActivity_6" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
-            <isactr:ConnectorActivity.FieldObjects>
-              <isactr:FieldObject Name="modelName" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">gpt-35-turbo-0125</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="prompt" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">[question]</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
-              <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
-              <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
-              <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
-              <isactr:FieldObject Name="topK" Type="FieldArgument" />
-              <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">Existing index</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="topP" Type="FieldArgument" />
-              <isactr:FieldObject Name="_file" Type="FieldArgument" />
-              <isactr:FieldObject Name="indexID" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">US Laws</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="numberOfResults" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">3</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="top_p" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">1</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="instruction" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64" />
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="temperature" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Double">1</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">0</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">0</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="n" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:Int64">1</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="_stop" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String" />
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="out_text" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="x:String">[answer]</OutArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="x:String" />
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="uiascb1:v2_sub_generateChatCompletion_Create" />
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="x:String">[quote]</OutArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-            </isactr:ConnectorActivity.FieldObjects>
-          </isactr:ConnectorActivity>
         </Sequence>
       </If.Else>
     </If>

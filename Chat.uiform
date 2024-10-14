@@ -20,19 +20,24 @@
         "input": true
       },
       {
-        "label": "Legislation",
+        "label": "Argument",
         "optionsLabelPosition": "right",
         "inline": false,
         "tableView": false,
         "values": [
           {
-            "label": "Italy",
+            "label": "Code Of Conduct",
             "value": "italy",
             "shortcut": ""
           },
           {
-            "label": "U.S.A.",
+            "label": "U.S. Laws",
             "value": "uSA",
+            "shortcut": ""
+          },
+          {
+            "label": "Employees",
+            "value": "employees",
             "shortcut": ""
           }
         ],
